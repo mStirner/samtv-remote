@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "91e9a64a-c45a-47b0-8bf3-5ee9189e0bcb",
+		"name": "smatv-remote",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Open pin page",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data",
+							"value": "pin4",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.2.100:8080/ws/apps/CloudPINPage",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"2",
+						"100"
+					],
+					"port": "8080",
+					"path": [
+						"ws",
+						"apps",
+						"CloudPINPage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Check pin page",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data",
+							"value": "pin4",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.2.100:8080/ws/apps/CloudPINPage",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"2",
+						"100"
+					],
+					"port": "8080",
+					"path": [
+						"ws",
+						"apps",
+						"CloudPINPage"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Close pin page",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data",
+							"value": "pin4",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.2.100:8080/ws/apps/CloudPINPage/run",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"2",
+						"100"
+					],
+					"port": "8080",
+					"path": [
+						"ws",
+						"apps",
+						"CloudPINPage",
+						"run"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get device description",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.2.100:8001/ms/1.0/",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"2",
+						"100"
+					],
+					"port": "8001",
+					"path": [
+						"ms",
+						"1.0",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
