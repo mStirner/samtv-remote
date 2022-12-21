@@ -1,0 +1,5 @@
+samtvcli/doc/doc
+samtvcli/builds
+samtvcli/samtvcli
+
+*.sw[op]
